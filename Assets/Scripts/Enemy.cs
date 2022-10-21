@@ -40,7 +40,8 @@ public class Enemy : MonoBehaviourPun
         if (targetPlayer != null)
         {
             float dist = Vector3.Distance(transform.position, targetPlayer.transform.position);
-            if (dist < attackRange && Time.time - lastAttackTime >= attackRange) Attack();
+            if (dist < attackRange && Time.time - lastAttackTime >= attackRange) 
+                Attack();
             else if (dist > attackRange)
             {
                 Vector3 dir = targetPlayer.transform.position - transform.position;
@@ -65,19 +66,19 @@ public class Enemy : MonoBehaviourPun
         if (Time.time - lastPlayerDetectTime > playerDetectRate)
         {
             lastPlayerDetectTime = Time.time;
-        }
-        foreach (PlayerController player in GameManager.instance.players)
-        {
-            float dist = Vector2.Distance(transform.position, player.transform.position);
-            if (player == targetPlayer)
+            foreach (PlayerController player in GameManager.instance.players)
             {
-                if (dist > chaseRange)
-                    targetPlayer = null;
-            }
-            else if (dist < chaseRange)
-            {
-                if (targetPlayer == null)
-                    targetPlayer = player;
+                float dist = Vector2.Distance(transform.position, player.transform.position);
+                if (player == targetPlayer)
+                {
+                    if (dist > chaseRange)
+                        targetPlayer = null;
+                }
+                else if (dist < chaseRange)
+                {
+                    if (targetPlayer == null)
+                        targetPlayer = player;
+                }
             }
         }
     }

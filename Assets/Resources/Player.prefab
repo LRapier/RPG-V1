@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 3156488572591048820}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -227,7 +227,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!70 &4966228167849745311
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -372,6 +372,10 @@ PrefabInstance:
     - target: {fileID: 4260561498516686394, guid: 3aecff43adf61b74cae497ff64a97d02, type: 3}
       propertyPath: m_Name
       value: HeaderInfo
+      objectReference: {fileID: 0}
+    - target: {fileID: 4315975187357312409, guid: 3aecff43adf61b74cae497ff64a97d02, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5623778130051588221, guid: 3aecff43adf61b74cae497ff64a97d02, type: 3}
       propertyPath: m_Pivot.x

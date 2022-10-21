@@ -23,6 +23,4 @@ public class HeaderInfo : MonoBehaviourPun
     {
         bar.fillAmount = (float)value / maxValue;
     }
-
-
 }
