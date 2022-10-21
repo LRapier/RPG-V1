@@ -1,3 +1,2 @@
-# RPG-V1
+# RPG-V2
  
-Play: https://lrapier.github.io/RPG-V1/
