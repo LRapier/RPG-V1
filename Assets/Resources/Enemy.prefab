@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 1742085057336337165}
   - component: {fileID: 8308709470078314543}
   - component: {fileID: 2274405470855580850}
+  - component: {fileID: 2549393415925906976}
+  - component: {fileID: 8993893500472832298}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -150,6 +152,45 @@ MonoBehaviour:
   healthBar: {fileID: 8912803362003430667}
   sr: {fileID: 4665755881675471935}
   rig: {fileID: 1742085057336337165}
+--- !u!114 &2549393415925906976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 209548836547747761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents:
+  - {fileID: 8993893500472832298}
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
+--- !u!114 &8993893500472832298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 209548836547747761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
 --- !u!1001 &7883489972955473282
 PrefabInstance:
   m_ObjectHideFlags: 0
